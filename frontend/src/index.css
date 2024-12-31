@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .neon-heart {
+    filter: drop-shadow(0 0 10px red) drop-shadow(0 0 20px red) drop-shadow(0 0 30px red);
+  }
+
+  @keyframes random-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(40vw, 10vh);
+    }
+    20% {
+        transform: translate(-20vw, 30vh);
+    }
+    30% {
+        transform: translate(60vw, -50vh);
+    }
+    40% {
+        transform: translate(-50vw, 70vh);
+    }
+    50% {
+        transform: translate(10vw, -30vh);
+    }
+    60% {
+        transform: translate(-70vw, 40vh);
+    }
+    70% {
+        transform: translate(80vw, -20vh);
+    }
+    80% {
+        transform: translate(-40vw, 50vh);
+    }
+    90% {
+        transform: translate(30vw, -60vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.element {
+  animation: random-move 5s infinite;
+}
+  
+  .animate-random-move {
+    animation: random-move 50s infinite ease-in-out;
+    position: absolute;
+  }
+  
+  .delay-500 {
+    animation-delay: 2s;
+  }
+  
+  
